@@ -1,5 +1,6 @@
 export default function HomePage() {
-    <div>
+    return (
+    <div className="container pt-4">
     <p>Hello World!</p>
     </div>
-}
+)}

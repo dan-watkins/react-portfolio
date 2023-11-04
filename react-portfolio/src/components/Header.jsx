@@ -5,17 +5,20 @@ export default function Header() {
   return (
     <Navbar
       links={[
-        <Link className="nav-link text-light" to="/">
-          Home
+        <Link className="nav-link text-light" to="/home">
+          Daniel Watkins
         </Link>,
         <Link className="nav-link text-light" to="/about">
           About Me
         </Link>,
         <Link className="nav-link text-light" to="/project/:id">
-          Projects
+          Portfolio
         </Link>,
         <Link className="nav-link text-light" to="/contact">
           Contact Me
+        </Link>,
+        <Link className="nav-link text-light" to="/resume">
+          Resume
         </Link>,
       ]}
     />

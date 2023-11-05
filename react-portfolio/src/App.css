@@ -46,3 +46,8 @@
 .nav-link:hover {
   color: lightblue;
 }
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}

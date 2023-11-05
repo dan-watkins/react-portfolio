@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import CardContainer from "../components/UI/Card";
 import API from "../utils/API";
+import "../App.css";
 
 export default function ProjectPage() {
   const [project, setProject] = useState({});
@@ -18,12 +19,14 @@ export default function ProjectPage() {
 
   return (
     <>
-      <CardContainer project={project[0]}></CardContainer>
-      <CardContainer project={project[1]}></CardContainer>
-      <CardContainer project={project[2]}></CardContainer>
-      <CardContainer project={project[3]}></CardContainer>
-      <CardContainer project={project[4]}></CardContainer>
-      <CardContainer project={project[5]}></CardContainer>
+      <div className="wrapper">
+        <CardContainer project={project[0]}></CardContainer>
+        <CardContainer project={project[1]}></CardContainer>
+        <CardContainer project={project[2]}></CardContainer>
+        <CardContainer project={project[3]}></CardContainer>
+        <CardContainer project={project[4]}></CardContainer>
+        <CardContainer project={project[5]}></CardContainer>
+      </div>
     </>
   );
 }

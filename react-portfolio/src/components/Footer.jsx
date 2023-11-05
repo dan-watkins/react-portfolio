@@ -6,28 +6,27 @@ export default function Footer() {
       <footer class="py-3 my-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item">
-            <a href="home" class="nav-link px-2 text-muted">
-              Home
+            <a
+              href="https://github.com/dan-watkins"
+              class="nav-link px-2 text-muted"
+            >
+              GitHub
             </a>
           </li>
           <li class="nav-item">
-            <a href="about" class="nav-link px-2 text-muted">
-              About Me
+            <a
+              href="https://www.linkedin.com/in/daniel-watkins-08b41661/"
+              class="nav-link px-2 text-muted"
+            >
+              LinkedIn
             </a>
           </li>
           <li class="nav-item">
-            <a href="project/:id" class="nav-link px-2 text-muted">
-              Portfolio
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="contact" class="nav-link px-2 text-muted">
-              Contact Me
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="resume" class="nav-link px-2 text-muted">
-              Resume
+            <a
+              href="https://stackoverflow.com/"
+              class="nav-link px-2 text-muted"
+            >
+              Stack Overflow
             </a>
           </li>
         </ul>

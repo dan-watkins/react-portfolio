@@ -51,3 +51,25 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.figure-border {
+  display: flex;
+  padding: 2em;
+  border: 5px;
+  border-radius: 25px;
+  border-style: groove;
+  background-color: lightsteelblue;
+}
+
+.figure-text {
+  padding: 2em;
+  display: flex;
+  flex-direction: wrap;
+  justify-content: center;
+}
+
+.figure-img {
+  border: 2px;
+  border-style: groove;
+  border-radius: 25px;
+}

@@ -43,10 +43,6 @@
   color: white;
 }
 
-.nav-link:hover {
-  color: lightblue;
-}
-
 .wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -58,7 +54,7 @@
   border: 5px;
   border-radius: 25px;
   border-style: groove;
-  background-color: lightsteelblue;
+  background-color: #CAE5EA;
 }
 
 .figure-text {

@@ -1,23 +1,49 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Navbar from "./UI/Navbar";
 
 export default function Header() {
+  const location = useLocation();
+
+  const activeLink = (path) => location.pathname === path;
+
   return (
     <Navbar
       links={[
-        <Link key={1} className="nav-link text-light" to="/about">
+        <Link key={1} className="nav-link" style={{ color: "white" }}>
           Daniel Watkins
         </Link>,
-        <Link key={2} className="nav-link text-light" to="/about">
+        <Link
+          key={2}
+          className="nav-link"
+          to="/about"
+          style={{ color: activeLink("/about") ? "lightsteelblue" : "white" }}
+        >
           About Me
         </Link>,
-        <Link key={3} className="nav-link text-light" to="/portfolio">
+        <Link
+          key={3}
+          className="nav-link"
+          to="/portfolio"
+          style={{
+            color: activeLink("/portfolio") ? "lightsteelblue" : "white",
+          }}
+        >
           Portfolio
         </Link>,
-        <Link key={4} className="nav-link text-light" to="/contact">
+        <Link
+          key={4}
+          className="nav-link"
+          to="/contact"
+          style={{ color: activeLink("/contact") ? "lightsteelblue" : "white" }}
+        >
           Contact Me
         </Link>,
-        <Link key={5} className="nav-link text-light" to="/resume">
+        <Link
+          key={5}
+          className="nav-link"
+          to="/resume"
+          style={{ color: activeLink("/resume") ? "lightsteelblue" : "white" }}
+        >
           Resume
         </Link>,
       ]}

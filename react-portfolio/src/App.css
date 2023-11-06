@@ -73,3 +73,19 @@
   border-style: groove;
   border-radius: 25px;
 }
+
+.btn {
+  position: absolute;
+  bottom: 1rem;
+  right: 30%;
+}
+
+.card-img-top {
+  padding: 2em;
+  width: auto;
+  max-height: 100%;
+  border: 2px;
+  border-style: solid;
+  border-radius: 25%;
+  border-color: lightgray;
+}

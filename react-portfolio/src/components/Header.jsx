@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <Navbar
       links={[
-        <Link key={1} className="nav-link text-light" to="/home">
+        <Link key={1} className="nav-link text-light" to="/about">
           Daniel Watkins
         </Link>,
         <Link key={2} className="nav-link text-light" to="/about">

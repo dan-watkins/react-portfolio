@@ -1,31 +1,21 @@
-import { useState, useEffect } from "react";
-import CardContainer from "../components/UI/Card";
-import API from "../utils/API";
+import CardContainer1 from "../components/UI/Card1";
+import CardContainer2 from "../components/UI/Card2";
+import CardContainer3 from "../components/UI/Card3";
+import CardContainer4 from "../components/UI/Card4";
+import CardContainer5 from "../components/UI/Card5";
+import CardContainer6 from "../components/UI/Card6";
 import "../App.css";
 
 export default function ProjectPage() {
-  const [project, setProject] = useState({});
-
-  useEffect(() => {
-    const getProject = async () => {
-      const data = await API.getAllProjects();
-      const list = data.data;
-      setProject(list);
-      console.log(project);
-    };
-
-    getProject();
-  }, []);
-
   return (
     <>
       <div className="wrapper">
-        <CardContainer project={project[0]}></CardContainer>
-        <CardContainer project={project[1]}></CardContainer>
-        <CardContainer project={project[2]}></CardContainer>
-        <CardContainer project={project[3]}></CardContainer>
-        <CardContainer project={project[4]}></CardContainer>
-        <CardContainer project={project[5]}></CardContainer>
+        <CardContainer1 />
+        <CardContainer2 />
+        <CardContainer3 />
+        <CardContainer4 />
+        <CardContainer5 />
+        <CardContainer6 />
       </div>
     </>
   );

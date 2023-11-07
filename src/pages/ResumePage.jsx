@@ -13,7 +13,7 @@ export default function ResumePage() {
           Click the download button to see my resume. This is a placeholder
           resume for now.
         </Card.Text>
-        <Button href="src/assets/organized_modern_resume.docx">Download</Button>
+        <Button href="/files/blank-resume.pdf">Download</Button>
       </Card.Body>
     </Card>
   );
